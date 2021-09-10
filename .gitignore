@@ -1,4 +1,8 @@
 .idea/
-src/
-dist/*.png
+venv/
 
+src_maps/*
+dist/*
+full_maps/*
+
+!*/.gitkeep

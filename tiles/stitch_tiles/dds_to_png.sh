@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/src/bash
 
 # use ImageMagick to convert directory of .dds to .png
 

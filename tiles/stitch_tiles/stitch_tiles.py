@@ -52,7 +52,7 @@ def main():
             w = (x-1) * baseHeight
             result.paste(im=tile, box=(w,h))
 
-    result.save("stitch.png")
+    result.save("stitch_tiles.png")
 
 
 main()
