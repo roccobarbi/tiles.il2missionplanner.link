@@ -49,14 +49,14 @@ def process_image(config):
         os.makedirs(config["map_root"], exist_ok=True)
     for zoom in zoomed_width.keys():
         config["zoom_level"] = zoom
-        image = os.path.join(config["root"], config["image_directory"], config["zoom_level"] + ".png")
+        image = os.path.join(config["root"], config["image_directory"], str(config["zoom_level"]) + ".png")
         if os.path.exists(image):
-            slice_image(image, config)
+            slice_image(Image.open(image), config)
 
 
 def main(params):
     config = parse_params(params)
-    if config["image"] == "":
+    if config["image_directory"] == "":
         pass
     else:
         process_image(config)
